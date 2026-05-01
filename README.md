@@ -67,7 +67,7 @@ pip install -r requirements.txt
 jupyter notebook
 ```
 
-# Running the Code
+## Running the Code
 
 Open `problems.ipynb` in Jupyter Notebook and execute cells sequentially. The notebook includes:
 - Function implementations
