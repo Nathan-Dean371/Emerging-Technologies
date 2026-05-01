@@ -15,16 +15,19 @@ This repository contains solutions and implementations for the Emerging Technolo
 ```
 .
 ├── problems.ipynb          # Problem set solutions
-├── project.ipynb          # Main project implementation
 ├── requirements.txt       # Python dependencies
 └── README.md             # This file
 ```
 
 ## Problem Set
 
-### Problem 1: Generating Random Boolean Functions
+### Problems 1–5
 
-Implementation of a function generator that creates random constant or balanced Boolean functions with 4 inputs.
+The notebook `problems.ipynb` contains solutions for Problems 1–5 from the assessment brief, covering:
+- Classical generation and testing of constant vs balanced Boolean functions
+- Qiskit quantum oracles for Deutsch's problem
+- Deutsch's algorithm implemented and demonstrated in Qiskit
+- A 4-bit Deutsch–Jozsa circuit built from a classical truth table oracle
 
 **Key Concepts:**
 - Boolean function classification (constant vs balanced)
@@ -32,9 +35,12 @@ Implementation of a function generator that creates random constant or balanced 
 - Oracle function abstraction
 - Mathematical proof of correctness
 
-**Functions Implemented:**
-- `random_constant_balanced()`: Generates a random constant or balanced function
-- `is_constant_or_balanced()`: Verifies function classification
+**Key Functions Implemented (in the notebook):**
+- `random_constant_balanced()`: Generates a random constant or balanced 4-input Boolean function
+- `determine_constant_balanced()`: Classically determines whether a 4-input function is constant or balanced
+- `deutsch_function_generator()`: Builds the 1-bit Deutsch oracles in Qiskit
+- `deutsch_algorithm()`: Runs Deutsch's algorithm using the chosen oracle
+- `build_oracle_from_truth_table()` / `deutsch_jozsa_4bit()`: Builds and runs the 4-bit Deutsch–Jozsa algorithm
 
 ## Technologies Used
 
